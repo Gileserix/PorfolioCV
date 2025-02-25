@@ -23,7 +23,7 @@ function ProfileScreen() {
             <img src="../assets/images/react.png" alt="Foto de perfil" />
             </div>
             <div className="medal-photo">
-            <img src="../assets/images/java.jpg" alt="Foto de perfil" />
+            <img src="../assets/images/java.png" alt="Foto de perfil" />
             </div>
             <div className="medal-photo">
             <img src="../assets/images/html5.png" alt="Foto de perfil" />
@@ -33,7 +33,7 @@ function ProfileScreen() {
             </div>
             <br></br>
             <div className="medal-photo">
-            <img src="../assets/images/javaScript.jpg" alt="Foto de perfil" />
+            <img src="../assets/images/javaScript.png" alt="Foto de perfil" />
             </div>
             <div className="medal-photo">
             <img src="../assets/images/mongodb.png" alt="Foto de perfil" />
