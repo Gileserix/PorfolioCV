@@ -1,6 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-function ProfileScreen() {
+const ProfileScreen = () => {
+  const [showPhoneNumber, setShowPhoneNumber] = useState(false);
+
+  const handlePhoneClick = () => {
+    setShowPhoneNumber(true);
+  };
+
   return (
     <div className="screen2 pixel-rounded2">
       <div className="header pixel-rounded3">
@@ -53,8 +59,28 @@ function ProfileScreen() {
             <h3>Datos de interes</h3>
             <p>- Disponibilidad Geografica  &nbsp; - Carnet coche  <br></br><br></br>- Vehiculo propio</p>
           </div>
+          <div className="header pixel-rounded3">
+            <h3>Contacto</h3>
+            <div className="medal-photo2" onClick={handlePhoneClick}>
+            <img src="../assets/images/telefono.png" alt="Foto de perfil" />
+            </div>
+            {showPhoneNumber && <p>+34 610109024</p>}
+            <div className="medal-photo2">
+            <a href="https://www.linkedin.com/in/fausto-lopez-alba" target="_blank" rel="noopener noreferrer">
+            <img src="../assets/images/linkedin.png" alt="Foto de perfil" />
+            </a>
+            </div>
+            <p>LLamame o Visita mi perfil</p>
+            <br></br>
+            <div className="medal-photo2">
+            <a href="mailto:faustolopezalba@gmail.com">
+            <img src="../assets/images/email.png" alt="Foto de perfil" />
+            </a>
+            </div>
+            <p>Mandame un correo</p>
+          </div>
         </div>
   );
-}
+};
 
 export default ProfileScreen;

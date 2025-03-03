@@ -165,7 +165,22 @@ p {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.medal-photo2 {
+  display:inline-flex;
+  width: 100px; /* Ajusta el tamaño de la imagen */
+  height: 100px;
+  overflow: hidden;
+  margin-right: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 .medal-photo img{
+  width: 100%; /* Ajusta el tamaño de la imagen */
+  height: 100%;
+  object-fit: contain;
+  
+}
+.medal-photo2 img{
   width: 100%; /* Ajusta el tamaño de la imagen */
   height: 100%;
   object-fit: contain;
@@ -208,6 +223,13 @@ p {
     margin-top: 8px;
     margin-bottom: 8px;
   }
+  .medal-photo2 {
+    width: 85px; /* Ajusta el tamaño de la imagen */
+    height: 85px;
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
 }
 
 /* Estilos para móviles */
@@ -227,6 +249,13 @@ p {
   .medal-photo {
     width: 45px; /* Ajusta el tamaño de la imagen */
     height: 45px;
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .medal-photo2 {
+    width: 75px; /* Ajusta el tamaño de la imagen */
+    height: 75px;
     margin-right: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
